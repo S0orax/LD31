@@ -1,6 +1,6 @@
 var Particle = function(image, x, y, duration) {
 	this.image = new Image();
-	this.image.src = "../img/" + image;
+	this.image.src = "./img/" + image;
 	this.x = x;
 	this.y = y;
 	this.xd = 0;

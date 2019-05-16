@@ -3,7 +3,7 @@ var Player = function(level, x, y) {
 	this.x = x;
 	this.y = y;
 	this.sprite = new Image();
-	this.sprite.src = "../img/spik_sprite.png";
+	this.sprite.src = "./img/spik_sprite.png";
 	this.frame = 0;
 	this.frameDuration = 10;
 	this.width = 32;
@@ -52,7 +52,7 @@ Player.prototype.removeParticle = function() {
 };
 
 Player.prototype.collisionBlock = function() {
-	var gravity = 0.1;
+	var gravity = 0.05;
 	for(var i = 0; i < this.level.blocks.length; i++) {
 		var collisionY = this.level.blocks[i].height + height - this.height;
 		var xDeb = this.level.blocks[i].x;
